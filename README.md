@@ -12,5 +12,5 @@ cd webpack_tut
 use npm install to install all dependencies . and use webpack to compile jsx to js boundle file.
 ```sh
 npm install
-webpack
+npm run dev
 ```
