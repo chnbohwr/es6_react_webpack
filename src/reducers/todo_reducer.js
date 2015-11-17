@@ -1,3 +1,9 @@
+/**
+ * 有關於redux的reducer的教學可以參考
+ * https://github.com/happypoulparedux-tutorial/blob/master/04_simple-reducer.js
+ * 根據理論上來說一個app只能有一個store但是可以有很多的reducer
+ */
+
 import {VISIBILITYFILTERS, TYPES} from '../action/action.js';
 import redux from 'redux';
 //製作一開始初始的todos陣列
