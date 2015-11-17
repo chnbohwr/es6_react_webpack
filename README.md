@@ -4,8 +4,8 @@ this project to help people first step on webpack and react.
 
 first clone this repository to your computer.
 ```sh
-git clone https://github.com/chnbohwr/es6_react_webpack webpack_tut
-cd webpack_tut
+git clone https://github.com/chnbohwr/redux_todo
+cd redux_todo
 ```
 
 ### start
