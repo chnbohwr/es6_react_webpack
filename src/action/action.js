@@ -11,8 +11,8 @@ ADD_TODO: 新增備忘錄
 COMPLETE_TODO: 完成備忘錄
 **/
 export const TYPES = {
-  ADD_TODO: 'ADD_TODO',
-  COMPLETE_TODO: 'COMPLETE_TODO'
+    ADD_TODO: 'ADD_TODO',
+    COMPLETE_TODO: 'COMPLETE_TODO'
 };
 
 /**
@@ -21,10 +21,15 @@ export const TYPES = {
  * @return {Object}      action物件
  */
 export var addTodo = (text) => {
-  return {
-    type: TYPES.ADD_TODO,
-    text: text
-  };
+    if (text) {
+        return {
+            type: TYPES.ADD_TODO,
+            text: text
+        };
+    } else {
+        return;
+    }
+
 }
 
 /**
@@ -34,8 +39,10 @@ export var addTodo = (text) => {
  * @return {Object}       action物件
  */
 export var completeTodo = (index) => {
-  return {
-    type: TYPES.COMPLETE_TODO,
-    index: index
-  };
+    return {
+        type: TYPES.COMPLETE_TODO,
+        index: index
+    };
 }
+
+export var actionCreator={addTodo,completeTodo};
