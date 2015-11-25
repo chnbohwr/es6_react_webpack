@@ -14,3 +14,9 @@ use npm install to install all dependencies . and use webpack to compile jsx to 
 npm install
 npm run dev
 ```
+
+### test
+use karma to do unit test and generate coverage report.
+```sh
+npm test
+```
